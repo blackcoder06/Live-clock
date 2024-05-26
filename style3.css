@@ -1,0 +1,163 @@
+html {
+    background-color: #1d2731;
+}
+
+body {
+    min-height: 100vh;
+    margin:0;
+
+}
+
+.clock {
+    width: 30rem;
+    height: 30rem;
+    position:relative;
+    padding: 2rem;
+    background-color: #282828;
+    border: 7px solid #282828;
+    box-shadow: -4px -4px 10px rgba(67,67,67,0.5) , inset 4px
+     4px 10px rgba(0,0,0,0.5) , inset -4px -4px 10px rgba(67,67,67,0.5), 
+     4px 4px 10px rgba(0,0,0,0.3) ; 
+      border-radius: 50%;
+      margin: 50px auto;
+      z-index: 0;
+}
+
+#clock-elements {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+.stick-primary{
+    background-color: #328cc1;
+    width: 5px;
+    height: 100%;
+    position: relative;
+    top: 0;
+    left: 49%;
+
+}
+
+
+.stick-primary::before{
+    content: "";
+    background-color: #328cc1;
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    transform: rotate(90deg);
+    left: 49%;
+
+}
+
+.sticks {
+    background-color:#d9d9d9 ;
+    width: 3px;
+    height: 88%;
+    position: absolute;
+    z-index: 2;
+    top: 6%;
+    left: 49%;
+    z-index: -10;
+
+}
+
+.stick-1{
+    transform: rotate(30deg);
+}
+
+.stick-2 {
+    transform: rotate(60deg);
+}
+
+.stick-3 {
+    transform:rotate(120deg);
+}
+
+
+.stick-4 {
+    transform:rotate(150deg);
+}
+
+#inner-circle {
+    background-color: #282828;
+    width: 80%;
+    height: 80%;
+    border-radius: 50%;
+    position: absolute;
+    left: 10%;
+    top: 10%;
+}
+
+.CC {
+    background: grey;
+    width: 5%;
+    height: 5%;
+    position: absolute;
+    left: 47.5%;
+    top: 47.5%;
+    border-radius: 50%;
+    z-index: 10;
+}
+
+.sec-hand{
+    width: 2px;
+    height: 44%;
+    background-color: #ff533d;
+    position: absolute;
+    top: 6%;
+    border-radius: 10px;
+    left: 49.9%;
+    transform-origin: bottom center;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+    z-index: 1;
+}
+
+.min-hand{
+    width: 3px;
+    height: 39%;
+    background-color: #328cc1;
+    position: absolute;
+    top: 11%;
+    left: 49.4%;
+    transform-origin: bottom center;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+    z-index: 1;
+
+}
+
+.hour-hand{
+    width: 5px;
+    height: 25%;
+    background-color: #328cc1;
+    position: absolute;
+    top: 25%;
+    left: 49.1%;
+    border-radius: 10px;
+    transform-origin: bottom center;
+    z-index: 1;
+    transition-timing-function: cubic-bezier(0.1,2.7,0.58,1);
+
+}
+
+.date{
+    width: 20%;
+    height: 6%;
+    background-color: #282828;
+    color: #ddd;
+    position: absolute;
+    bottom:22.5%;
+    left: 40%;
+    border-radius: 5px;
+    font-family: sans-serif;
+    text-align: center;
+    font-size:large ;
+    z-index: 0;
+}
+
+
+
+
+
+
